@@ -1,0 +1,68 @@
+/* 
+ * logo + text main header
+ */
+
+.logo-header {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* logo pic + text */
+.logo {
+  /* width: var(--layout-main-logo-width); */
+  position: relative;
+}
+
+.logo__profile-pic {
+  /* height: var(--layout-main-logo-size); */
+}
+
+/* responsive resize for < browser */
+@media (max-width: 768px) {
+  .logo {
+    /* width: var(--layout-main-logo-width-md); */
+  }
+
+  .logo__profile-pic {
+    /* height: var(--layout-main-logo-size-md); */
+  }
+}
+/* responsive resize for mobile */
+@media (max-width: 576px) {
+  .logo {
+    /* width: var(--layout-main-logo-width-sm); */
+  }
+
+  .logo__profile-pic {
+    /* height: var(--layout-main-logo-size-sm); */
+    margin-top: 0.25rem;
+  }
+}
+
+/* profile links */
+.profile-links {
+  display: flex;
+}
+
+.profile-links__icon-button {
+  display: block;
+  color: var(--color-primary-on-bg);
+}
+
+.profile-links__icon-button:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.profile-links__icon-button:hover {
+  color: var(--color-primary-on-bg-hover);
+}
+
+/* responsive resize for < desktop */
+@media (max-width: 768px) {
+}
+/* responsive resize for mobile */
+@media (max-width: 576px) {
+}
